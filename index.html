@@ -6,6 +6,17 @@
     <title>企业网站设计</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
+
+
+    <script >
+      window._hmt=window._hmt||[]
+      (function(){
+        const hm=document.createElement('script')
+        hm.src="https://hm.baidu.com/hm.js?6ec32206f550ce70fb01227abbae0e8a"
+        const s=document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm,s)
+      })()
+    </script>
     <script src="js/index.js"></script>
   </head>
 
@@ -23,7 +34,7 @@
           <ul>
             <li><a href="#">首页</a></li>
             <li class="menuBtn">
-              <a href="#">成功案例</a>
+              <a href="#"  class="test">成功案例</a>
               <ul class="menu">
                 <li><a href="#">品牌设计</a></li>
                 <li><a href="#">平面设计</a></li>
@@ -153,5 +164,16 @@
       </footer>
       <!-- 页脚部分结束啦 -->
     </div>
+
+    <script>
+      const test=document.querySelector('.test')
+      test.addEventListener('click',function(){
+        window._hmt.push('_trackEvent','tab','click')
+        console.log(window._hmt)
+      })
+
+
+
+    </script>
   </body>
 </html>
